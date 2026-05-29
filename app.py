@@ -6,10 +6,9 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    # Mengubah rasio kolom agar kolom tengah (col2) tempat logo menjadi jauh lebih lebar
     col1, col2, col3 = st.columns([0.2, 3.6, 0.2])
     with col2:
-        st.image("logomath.png", use_container_width=True) # use_container_width memastikan gambar memenuhi kolom
+        st.image("logomath.png", use_container_width=True)
     st.title("Bangun Datar")
     pilihan = st.selectbox("Pilih Bangun Datar", ["Persegi", "Persegi Panjang", "Segitiga", "Lingkaran", "Jajar Genjang"])
     st.caption("Dibuat Dengan 🫸🏼**Zidan Agil N, Kelas X PPLG 1**🫷🏼")
